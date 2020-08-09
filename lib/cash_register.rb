@@ -7,8 +7,8 @@ class  CashRegister
     @total = 0
   end
 
-  def discount(f = nil)
-
-  end
+  # def discount(f = nil)
+  #
+  # end
 
 end
