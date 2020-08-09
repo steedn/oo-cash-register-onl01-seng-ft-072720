@@ -24,7 +24,7 @@ class  CashRegister
     @total = new_total
     "After the discount, the total comes to $#{@total.to_i}."
     # binding.pry
-  elsif 
+  else
     "There is no discount to apply."
   end
   end
