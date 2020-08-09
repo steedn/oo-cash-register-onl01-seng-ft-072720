@@ -14,7 +14,6 @@ class  CashRegister
     quantity.times do
       @items << item
     end
-    end
     if quantity ==  nil
     @total += price
   else
