@@ -13,4 +13,5 @@ class  CashRegister
   else
     @total += (price*quantity)
   end
+  end
 end
