@@ -23,4 +23,7 @@ class  CashRegister
     new_total
     # binding.pry
   end
+  def total
+    apply_discount
+  end
 end
