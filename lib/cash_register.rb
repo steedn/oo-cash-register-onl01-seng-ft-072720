@@ -21,7 +21,7 @@ class  CashRegister
     new_disc = @discount.to_f / 100
     new_total = @total - @total*new_disc
     @total = new_total
-    "After the discount, the total comes to $#{@total}."
+    "After the discount, the total comes to $#{@total.to_i}."
     # binding.pry
   end
 end
