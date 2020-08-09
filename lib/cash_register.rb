@@ -18,13 +18,13 @@ class  CashRegister
   end
 
   def apply_discount
-    if @discount != 0
+    if @discount != nil
     new_disc = @discount.to_f / 100
     new_total = @total - @total*new_disc
     @total = new_total
     "After the discount, the total comes to $#{@total.to_i}."
     # binding.pry
-  else
+  elsif 
     "There is no discount to apply."
   end
   end
