@@ -1,3 +1,5 @@
+require "pry"
+
 class  CashRegister
 
   attr_accessor :total, :discount
@@ -19,5 +21,6 @@ class  CashRegister
     new_disc = @discount.to_f / 100
     new_total = @total.to_f / new_disc
     new_total
+    binding.pry
   end
 end
