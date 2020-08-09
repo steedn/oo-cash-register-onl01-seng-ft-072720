@@ -2,14 +2,16 @@ require "pry"
 
 class  CashRegister
 
-  attr_accessor :total, :discount
+  attr_accessor :total, :discount, :items
 
   def initialize(f = nil)
     @discount = f
     @total = 0
+    @items = []
   end
 
   def add_item(item, price, quantity = nil)
+    @items << item
     if quantity ==  nil
     @total += price
   else
